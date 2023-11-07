@@ -1,18 +1,25 @@
 ---
 layout: layouts/base.njk
 ---
-<h1>{{ title }}</h1>
 
-<ul class="post-metadata">
-	<li>{{ description }}
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
+<div class="row">
+	<div class="col"></div>
+	<div class="col">
+		<h3>{{ title }}</h3>
+		{%- for tag in tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<p><a href="{{ tagUrl }}" class="post-tag">Violation of Article {{ tag }}</a>{%- if not loop.last %}, {% endif %}</p>
+		{%- endfor %}
+		<p><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+	</div>
+</div>
 
-{{ content | safe }}
+<div class="row">
+	<div class="col">
+		<h2>{{ description }}</h2>
+		{{ content | safe }}
+	</div>
+</div>
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
