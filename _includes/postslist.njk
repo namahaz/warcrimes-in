@@ -1,9 +1,40 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
-<ol reversed class="postlist">
+{# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
 {% for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
+<article class="vh100 break-after">
+<h1 class="text-error hide-xs"> War Crime </h1>
+<div class="row">
+	<div class="col">
+		<h2>{{ post.data.title }}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-3">
+		
+		<h3><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLLL yyyy") }}</time></a></h3>
+	</div>
+	<div class="col-9">
+		<h3>Article Violation(s):<br/>
+		{%- for tag in post.data.tags | filterTagList %}
+		{{ tag }}
+		{%- endfor %}
+		</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<h4>{{ post.content | safe }}</h4>
+		<p>
+		{%- for source in post.data.sources | filterTagList %}
+			<a href="{{ source }}">{{ source }}</a>
+		{%- endfor %}
+		</p>
+		<h3 class="hide-xs hide-sm hide-md hide-lg">#WarCrimesInPalestine</h3>
+	</div>
+</div>
+
+<aside class="hide-xs hide-sm hide-md hide-lg">
+	<h2>Call for Ceasefire.</h2>
+	<h2>Call for War Crime Trials.</h2>
+</aside>
+</article>
 {% endfor %}
-</ol>
