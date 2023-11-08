@@ -10,23 +10,116 @@
 		<link rel="stylesheet" href="https://unpkg.com/chota">
 		<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print">
 		
-		<style>* { box-sizing: border-box; }</style>
+		<style>* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400..900&display=swap');
+
+:root {
+	--bg-color: #ffffff;
+	--bg-secondary-color: #f3f3f6;
+	--grid-maxWidth: 108rem;
+	--grid-gutter: 2rem;
+	--font-size: 1.6rem;
+	--font-color: #333333;
+	--font-family-sans: "Albert Sans", sans-serif;
+	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+  }
+
+h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 16rem;
+	margin: 0;
+	line-height: 1.25;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 6rem;
+	margin: 0;
+	line-height: 1.25;
+}
+
+h3 {
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.25;
+}
+
+center {
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	top: 0;
+}
+
+footer {
+	position: fixed;
+	bottom: 0.25cm;
+	left:0.25cm;
+}
+
+.vh100{
+	height: 100vh;	
+}
+
+article {
+	position: relative;
+}
+
+aside {
+	position: absolute;
+	bottom: 0;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+}
+
+@page {
+	margin: 0;
+}
+
+@media print {
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 4.8rem;
+	}
+
+	h2 {
+		font-size: 3.6rem;
+	}
+
+	.vh100{
+		height: auto;	
+	}
+
+	aside {
+		position: relative;
+	}
+}</style>
 	</head>
 	<body>
-		<header>
-			<a href="/" class="no-print hide-lg">War Crimes in Palestine</a>
-			<h1 class="hide-lg"> War Crimes </h1>
-			<nav class="no-print nav">
-				<div class="nav-left">
-					<div class="tabs">
-							<a href="/">Home</a>
-							<a href="/warcrimes/">War Crimes</a>
-					</div>
+		
+		<nav class="no-print nav">
+			<div class="nav-left">
+				<div class="tabs">
+						<a href="/">🕊</a>
 				</div>
-			</nav>
-		</header>
+			</div>
+		</nav>
 
-		<main id="skip">
+		<main id="skip" class="container">
 			<h1 id="content-not-found" tabindex="-1">Content not found. <a class="header-anchor" href="#content-not-found">#</a></h1>
 <p>Go <a href="/">home</a>.</p>
 <!--
@@ -43,8 +136,7 @@ This will work for both GitHub pages and Netlify:
 
 		</main>
 
-		<footer></footer>
-
+		
 		<!-- Current page: /404.html -->
 	</body>
 </html>
