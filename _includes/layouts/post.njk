@@ -2,22 +2,25 @@
 layout: layouts/base.njk
 ---
 
+<h1 class="center"> War Crime </h1>
+
 <div class="row">
 	<div class="col"></div>
 	<div class="col">
 		<h3>{{ title }}</h3>
+		<h4>
 		{%- for tag in tags | filterTagList %}
 		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<p><a href="{{ tagUrl }}" class="post-tag">Violation of Article {{ tag }}</a>{%- if not loop.last %}, {% endif %}</p>
+		<a href="{{ tagUrl }}" class="post-tag">Violation of Article {{ tag }}</a>{%- if not loop.last %}, {% endif %}
 		{%- endfor %}
-		<p><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+		<br/><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></h4>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col">
 		<h2>{{ description }}</h2>
-		{{ content | safe }}
+		<h4>{{ content | safe }}</h4>
 	</div>
 </div>
 

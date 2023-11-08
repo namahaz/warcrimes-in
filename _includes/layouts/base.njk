@@ -36,28 +36,22 @@
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
 	<body>
-		<header>
-			<a href="/" class="no-print hide-lg">{{ metadata.title }}</a>
-			<h1 class="hide-lg"> War Crimes </h1>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav class="no-print nav">
-				<div class="nav-left">
-					<div class="tabs">
-						{%- for entry in collections.all | eleventyNavigation %}
-							<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-						{%- endfor %}
-					</div>
+		{# {% include "header.njk" %} #}
+		<nav class="no-print nav">
+			<div class="nav-left">
+				<div class="tabs">
+					{%- for entry in collections.all | eleventyNavigation %}
+						<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+					{%- endfor %}
 				</div>
-			</nav>
-		</header>
+			</div>
+		</nav>
 
-		<main id="skip">
+		<main id="skip" class="container">
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
-
+		{% include "footer.njk" %}
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
