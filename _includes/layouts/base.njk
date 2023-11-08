@@ -10,7 +10,7 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 		<link rel="stylesheet" href="https://unpkg.com/chota">
-		<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print">
+		{# <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print"> #}
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -37,7 +37,7 @@
 	</head>
 	<body>
 		{# {% include "header.njk" %} #}
-		<nav class="no-print nav">
+		<nav class="hide-pr nav">
 			<div class="nav-left">
 				<div class="tabs">
 					{%- for entry in collections.all | eleventyNavigation %}

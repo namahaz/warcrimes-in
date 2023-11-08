@@ -1,28 +1,40 @@
 {# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
 {% for post in postslist | reverse %}
 <article class="vh100 break-after">
-<h1 class="center text-error"> War Crime </h1>
+<h1 class="text-error hide-xs"> War Crime </h1>
 <div class="row">
 	<div class="col">
 		<h2>{{ post.data.title }}</h2>
 	</div>
 </div>
 <div class="row">
-	<div class="col">
+	<div class="col-3">
+		
+		<h3><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLLL yyyy") }}</time></a></h3>
+	</div>
+	<div class="col-9">
+		<h3>Article Violation(s):<br/>
 		{%- for tag in post.data.tags | filterTagList %}
-		<h3>Violation of Article {{ tag }}</h3>
+		{{ tag }}
 		{%- endfor %}
+		</h3>
 	</div>
 </div>
 <div class="row">
-		<div class="col">
-		<h4>{{ post.data.description }}, <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time></h4>
+	<div class="col">
 		<h4>{{ post.content | safe }}</h4>
+		<p>
+		{%- for source in post.data.sources | filterTagList %}
+			<a href="{{ source }}">{{ source }}</a>
+		{%- endfor %}
+		</p>
+		<h3 class="hide-xs hide-sm hide-md hide-lg">#WarCrimesInPalestine</h3>
 	</div>
 </div>
-<aside>
-	<h2>Call for a ceasefire now!</h2>
-	<h3>#WarCrimesInPalestine</h3>
+
+<aside class="hide-xs hide-sm hide-md hide-lg">
+	<h2>Call for Ceasefire.</h2>
+	<h2>Call for War Crime Trials.</h2>
 </aside>
 </article>
 {% endfor %}
