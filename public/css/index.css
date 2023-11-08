@@ -5,7 +5,6 @@
 	--bg-secondary-color: #f3f3f6;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
-	--font-size: 1.6rem;
 	--font-color: #333333;
 	--font-family-sans: "Albert Sans", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
@@ -54,10 +53,6 @@ footer {
 	bottom: 0.25cm;
 	left:0.25cm;
 }
-
-/* .vh100{
-	height: 100vh;	
-} */
 
 article {
 	position: relative;

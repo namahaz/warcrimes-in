@@ -1,6 +1,6 @@
 {# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
 {% for post in postslist | reverse %}
-<article class="vh100 break-after">
+<article class="is-full-screen break-after">
 <h1 class="text-error hide-xs"> War Crime </h1>
 <div class="row">
 	<div class="col">
@@ -33,8 +33,9 @@
 </div>
 
 <aside class="hide-xs hide-sm hide-md hide-lg">
-	<h2>Call for Ceasefire.</h2>
-	<h2>Call for War Crime Trials.</h2>
+	<h3>Call for Ceasefire.<br/>
+	Call for War Crime Trials.<br/>
+	Call for Boycott and Divestment.</h3>
 </aside>
 </article>
 {% endfor %}
