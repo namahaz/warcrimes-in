@@ -3,23 +3,25 @@
 <article class="vh100 break-after">
 <h1 class="center text-error"> War Crime </h1>
 <div class="row">
-	<div class="col-5"></div>
-	<div class="col-7">
-		<h3><a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a></h3>
-		{%- for tag in post.data.tags | filterTagList %}
-			<h3>Violation of Article {{ tag }}</h3>
-		{%- endfor %}
-		<h4><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></h4>
+	<div class="col">
+		<h2>{{ post.data.title }}</h2>
 	</div>
 </div>
 <div class="row">
 	<div class="col">
-		<h3>{{ post.data.description }}</h3>
+		{%- for tag in post.data.tags | filterTagList %}
+		<h3>Violation of Article {{ tag }}</h3>
+		{%- endfor %}
+	</div>
+</div>
+<div class="row">
+		<div class="col">
+		<h4>{{ post.data.description }}, <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time></h4>
 		<h4>{{ post.content | safe }}</h4>
 	</div>
 </div>
 <aside>
-	<h2>Help by calling for a ceasefire now</h2>
+	<h2>Call for a ceasefire now!</h2>
 	<h3>#WarCrimesInPalestine</h3>
 </aside>
 </article>
