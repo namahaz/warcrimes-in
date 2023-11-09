@@ -20,25 +20,12 @@
 			<li><a href="{{ source }}">{{ source }}</a></li>
 		{%- endfor %}
 		</ul>
-		<div class="hide-xs hide-sm hide-md hide-lg">
-			<h3 >#WarCrimesInPalestine</h3>
-			<h4>10,300 Gazans Killed. 4,300 Children Killed. 1,300 Children Missing. 5,200 Homes Bombed. 1,000,000 Homeless.</h2>		
-		</div>
+		{% include "hashtag.njk" %}
 	</div>
 	<div class="col-2">
 		<h2><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
 	</div>
 </div>
-
-<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
-	<div class="row">
-		<div class="col">		
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//ceasefiretoday.com" class="pull-right" />
-		<h3>Call for Ceasefire.<br/>
-		Call for War Crime Trials.<br/>
-		Call for Boycott, Divestment, Sanctions.</h3>
-		</div>
-	</div>
-</aside>
+{% include "calls.njk" %}
 </article>
 {% endfor %}
