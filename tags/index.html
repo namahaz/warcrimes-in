@@ -5,52 +5,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>War Crimes in Palestine</title>
 		<meta name="description" content="Documenting War Crimes as Posters">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="War Crimes in Palestine">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..125,400..900&display=swap" rel="stylesheet">		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="War Crimes in Palestine">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="War Crimes in Palestine">
 		<link rel="stylesheet" href="https://unpkg.com/chota">
 		
 		
 		<style>* { box-sizing: border-box; }
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400..900&display=swap');
-
 :root {
 	--bg-color: #ffffff;
 	--bg-secondary-color: #f3f3f6;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
-	--font-size: 1.6rem;
 	--font-color: #333333;
-	--font-family-sans: "Albert Sans", sans-serif;
+	--color-primary: var(--color-error);
+	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
-  }
+}
 
 h1 {
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 16rem;
+	font-size: 15.2rem;
 	margin: 0;
 	line-height: 1.25;
+	font-stretch: expanded;
+	font-weight: 900;
+	letter-spacing: -0.08em;
 }
 
 h2 {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 6.8rem;
 	margin: 0;
 	line-height: 1.25;
+	font-stretch: condensed;
 }
 
 h3 {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 3.2rem;
 	margin: 0;
 	line-height: 1.25;
+	font-stretch: semi-condensed;
 }
 
 h4 {
-	font-weight: 500;
-	font-size: 2.4rem;
+	font-weight: 450;
+	font-size: 2rem;
 	margin: 0;
 	line-height: 1.25;
+	font-stretch: semi-expanded;
 }
 
 center {
@@ -68,18 +72,9 @@ footer {
 	left:0.25cm;
 }
 
-/* .vh100{
-	height: 100vh;	
-} */
-
 article {
 	position: relative;
 }
-
-/* aside {
-	position: absolute;
-	bottom: 0;
-} */
 
 nav {
 	position: fixed;
@@ -87,7 +82,7 @@ nav {
 }
 
 aside {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
 
@@ -97,21 +92,13 @@ article {
 
 @page {
 	size: letter;
-	margin: 0.5in;
+	margin: 0.325in;
 }
 
 @media print {
-	body {
-		/* padding: 0;
-		margin: 0; */
-	}
 
 	nav {
 		display: none;
-	}
-
-	.container {
-		width: 100%;
 	}
 
 	h1 {
@@ -126,9 +113,10 @@ article {
 		font-size: 2.8rem;
 	}
 
-	.vh100{
-		height: auto;	
+	article {
+		height: 100vh;
 	}
+
 }</style>
 	</head>
 	<body>
@@ -137,6 +125,7 @@ article {
 			<div class="nav-left">
 				<div class="tabs">
 						<a href="/">🕊</a>
+						<a href="/about/">👪</a>
 				</div>
 			</div>
 		</nav>
@@ -157,10 +146,8 @@ article {
 
 </ul>
 
-
 		</main>
 
-		
 		<!-- Current page: /tags/ -->
 	</body>
 </html>
