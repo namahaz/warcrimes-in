@@ -1,36 +1,55 @@
 ---
 layout: layouts/base.njk
 ---
-
-<h1 class="center"> War Crime </h1>
-
+<article class="is-full-screen break-after">
+<h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
 <div class="row">
-	<div class="col"></div>
 	<div class="col">
-		<h3>{{ title }}</h3>
-		<h4>
+		<h2>{{ title }}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-10">
+		<h3>Article Violation(s):<br/>
 		{%- for tag in tags | filterTagList %}
-		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<a href="{{ tagUrl }}" class="post-tag">Violation of Article {{ tag }}</a>{%- if not loop.last %}, {% endif %}
+			{{ tag }}<br />
 		{%- endfor %}
-		<br/><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></h4>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col">
-		<h2>{{ description }}</h2>
+		</h3><br/>
 		<h4>{{ content | safe }}</h4>
+		<ul>
+		{%- for source in sources | filterTagList %}
+			<li><a href="{{ source }}">{{ source }}</a></li>
+		{%- endfor %}
+		</ul>
+		<div class="hide-xs hide-sm hide-md hide-lg">
+			<h3 >#WarCrimesInPalestine</h3>
+			<h4>10,300 Gazans Killed. 4,300 Children Killed. 1,300 Children Missing. 5,200 Homes Bombed. 1,000,000 Homeless.</h2>		
+		</div>
+	</div>
+	<div class="col-2">
+		<h2><time datetime="{{ date | htmlDateString }}">{{ date | readableDate("LLL yyyy") }}</time></h3>
 	</div>
 </div>
 
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
+	<div class="row">
+		<div class="col">		
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//ceasefiretoday.com" class="pull-right" />
+		<h3>Call for Ceasefire.<br/>
+		Call for War Crime Trials.<br/>
+		Call for Boycott, Divestment, Sanctions.</h3>
+		</div>
+	</div>
+</aside>
+
+<section class="hide-pr">
+	{%- if collections.posts %}
+	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+	{%- set nextPost = collections.posts | getNextCollectionItem %}
+	{%- if nextPost or previousPost %}
+	{%- if previousPost %}Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+	{%- if nextPost %}Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+	{%- endif %}
+	{%- endif %}
+</section>
+</article>

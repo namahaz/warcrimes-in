@@ -7,7 +7,9 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 
 		{#- Atom and JSON feeds included by default #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..125,400..900&display=swap" rel="stylesheet">		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 		<link rel="stylesheet" href="https://unpkg.com/chota">
 		{# <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print"> #}
@@ -51,7 +53,6 @@
 			{{ content | safe }}
 		</main>
 
-		{% include "footer.njk" %}
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
