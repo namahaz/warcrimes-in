@@ -5,12 +5,12 @@ layout: layouts/base.njk
 <h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
 <div class="row">
 	<div class="col">
-		<h2>{{ title }}</h2>
+		<h2 class="text-capitalize">{{ title }}</h2>
 	</div>
 </div>
 <div class="row">
 	<div class="col-10">
-		<h3>Article Violation(s):<br/>
+		<h3>Article violation(s):<br/>
 		{%- for tag in tags | filterTagList %}
 			{{ tag }}<br />
 		{%- endfor %}
