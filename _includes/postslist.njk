@@ -8,10 +8,6 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-2">
-		<h3><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLLL yyyy") }}</time></a></h3>
-
-	</div>
 	<div class="col-10">
 		<h3>Article Violation(s):<br/>
 		{%- for tag in post.data.tags | filterTagList %}
@@ -28,6 +24,9 @@
 			<h3 >#WarCrimesInPalestine</h3>
 			<h4>10,300 Gazans Killed. 4,300 Children Killed. 1,300 Children Missing. 5,200 Homes Bombed. 1,000,000 Homeless.</h2>		
 		</div>
+	</div>
+	<div class="col-2">
+		<h2><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
 	</div>
 </div>
 

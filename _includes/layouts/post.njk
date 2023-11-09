@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 ---
-
 <article class="is-full-screen break-after">
 <h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
 <div class="row">
@@ -9,35 +8,38 @@ layout: layouts/base.njk
 		<h2>{{ title }}</h2>
 	</div>
 </div>
-
 <div class="row">
-	<div class="col-4">
-		
-		<h3><time datetime="{{ date | htmlDateString }}">{{ date | readableDate("LLLL yyyy") }}</time></h3>
-	</div>
-	<div class="col-8">
+	<div class="col-10">
 		<h3>Article Violation(s):<br/>
 		{%- for tag in tags | filterTagList %}
-		{{ tag }}
+			{{ tag }}<br />
 		{%- endfor %}
-		</h3>
-	</div>
-</div>
-<div class="row">
-	<div class="col">
+		</h3><br/>
 		<h4>{{ content | safe }}</h4>
-		<p>
+		<ul>
 		{%- for source in sources | filterTagList %}
-			<a href="{{ source }}">{{ source }}</a>
+			<li><a href="{{ source }}">{{ source }}</a></li>
 		{%- endfor %}
-		</p>
-		<h3 class="hide-xs hide-sm hide-md hide-lg">#WarCrimesInPalestine</h3>
+		</ul>
+		<div class="hide-xs hide-sm hide-md hide-lg">
+			<h3 >#WarCrimesInPalestine</h3>
+			<h4>10,300 Gazans Killed. 4,300 Children Killed. 1,300 Children Missing. 5,200 Homes Bombed. 1,000,000 Homeless.</h2>		
+		</div>
+	</div>
+	<div class="col-2">
+		<h2><time datetime="{{ date | htmlDateString }}">{{ date | readableDate("LLL yyyy") }}</time></h3>
 	</div>
 </div>
 
-<aside class="hide-xs hide-sm hide-md hide-lg">
-	<h2>Call for Ceasefire.</h2>
-	<h2>Call for War Crime Trials.</h2>
+<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
+	<div class="row">
+		<div class="col">		
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//ceasefiretoday.com" class="pull-right" />
+		<h3>Call for Ceasefire.<br/>
+		Call for War Crime Trials.<br/>
+		Call for Boycott, Divestment, Sanctions.</h3>
+		</div>
+	</div>
 </aside>
 
 <section class="hide-pr">
