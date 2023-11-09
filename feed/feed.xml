@@ -4,7 +4,7 @@
 	<subtitle>Documenting War Crimes as Posters</subtitle>
 	<link href="https://warcrimesinpalestine.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://warcrimesinpalestine.github.io/"/>
-	<updated>2023-10-31T00:00:00Z</updated>
+	<updated>2023-11-03T00:00:00Z</updated>
 	<id>https://warcrimesinpalestine.github.io/</id>
 	<author>
 		<name>WCIP</name>
@@ -12,11 +12,29 @@
 	</author>
 	
 	<entry>
-		<title>Airstrike on Jabalia refugee camp</title>
-		<link href="https://warcrimesinpalestine.github.io/warcrimes/jabilia/"/>
-		<updated>2023-10-31T00:00:00Z</updated>
-		<id>https://warcrimesinpalestine.github.io/warcrimes/jabilia/</id>
-		<content type="html">&lt;p&gt;The director for civil defense in Gaza told Al Jazeera that Israel dropped six US-made bombs in the area. Pictures of the aftermath showed several large craters amid destroyed buildings. The New York Times quoted an analyst who said the damage appeared consistent with Joint Direct Attack Munitions that Israel uses. Satellite imagery showed that an area of at least 2,500 square metres (27,000 sq ft) was &amp;quot;completely flattened&amp;quot; in the strikes, according to the NYT.&lt;/p&gt;
+		<title>Al-Shifa ambulance convoy bombed</title>
+		<link href="https://warcrimesinpalestine.github.io/warcrimes/al-shifa-convoy/"/>
+		<updated>2023-11-03T00:00:00Z</updated>
+		<id>https://warcrimesinpalestine.github.io/warcrimes/al-shifa-convoy/</id>
+		<content type="html">&lt;p&gt;On 3 November 2023, Israeli airstrikes hit an ambulance convoy departing from al-Shifa Hospital carrying patients killing 15 people and wounded dozens. The airstrike was condemned by the World Health Organization and Human Rights Watch.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Church Saint Poryphorus bombed</title>
+		<link href="https://warcrimesinpalestine.github.io/warcrimes/church-saint-poryphorus/"/>
+		<updated>2023-10-19T00:00:00Z</updated>
+		<id>https://warcrimesinpalestine.github.io/warcrimes/church-saint-poryphorus/</id>
+		<content type="html">&lt;p&gt;Israel Defence Forces conducted an airstrike that hit part of the Church of Saint Porphyrius where 500 Muslims and Christians had been sheltering from bombardments. At least 18 Palestinians were killed in the airstrike with exterior damage to the third oldest church in the world. The Greek Orthodox Patriarchate of Jerusalem condemned it as a &amp;quot;a war crime that cannot be ignored.&amp;quot;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>UNRWA school bombed</title>
+		<link href="https://warcrimesinpalestine.github.io/warcrimes/unrwa-school/"/>
+		<updated>2023-10-17T00:00:00Z</updated>
+		<id>https://warcrimesinpalestine.github.io/warcrimes/unrwa-school/</id>
+		<content type="html">&lt;p&gt;Since October 22nd, 2023, Israel Defense Forces conducted airstrikes on United Nations Relief and Works Agency for Palestine Refugees in the Near East (UNRWA) school in the Al-Maghazi refugee camp. UNRWA confirmed that 29 of their staff had been killed since 7 October, half of whom were teachers. The UNRWA Commissioner General responded saying, &amp;quot;This is outrageous, and it again shows a flagrant disregard for the lives of civilians.&amp;quot;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -26,6 +44,24 @@
 		<updated>2023-10-09T00:00:00Z</updated>
 		<id>https://warcrimesinpalestine.github.io/warcrimes/siege/</id>
 		<content type="html">&lt;p&gt;Israel&#39;s Defence Minister Yoav Gallant had ordered “a complete siege of the Gaza Strip,” home to 2.2 million Palestinians, nearly half of them children. “There will be no electricity, no food, no fuel, everything is closed,” he said. “We are fighting human animals, and we act accordingly.”&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Jabalia refugee camp bombed</title>
+		<link href="https://warcrimesinpalestine.github.io/warcrimes/jabilia-camp/"/>
+		<updated>2023-10-09T00:00:00Z</updated>
+		<id>https://warcrimesinpalestine.github.io/warcrimes/jabilia-camp/</id>
+		<content type="html">&lt;p&gt;Since October 9th, 2023, Israeli Defense Forces have conducted airstrikes on the densely populated Jabalia refugee camps on October 9th, 12th, 19th, 22nd, 31st, 1st, 2nd and 4th. The United Nation Human Rights Office stated, &amp;quot;We have serious concerns that these are disproportionate attacks that could amount to war crimes.&amp;quot;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Al-Shati refugee camp and mosques bombed</title>
+		<link href="https://warcrimesinpalestine.github.io/warcrimes/al-shati-camp/"/>
+		<updated>2023-10-09T00:00:00Z</updated>
+		<id>https://warcrimesinpalestine.github.io/warcrimes/al-shati-camp/</id>
+		<content type="html">&lt;p&gt;Since October 9th, 2023, Israel Defense Forces conducted 2 airstrikes on Al-Shati refugee camp, he third largest such camp with a population of 90,000 people. The camp was originally created to house refugees from the 1948 Arab-Israeli War. In the airstrikes, four mosques were flattened as seen in satellite pictures.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
