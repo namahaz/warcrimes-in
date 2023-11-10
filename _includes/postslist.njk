@@ -22,7 +22,7 @@
 		</ul>
 	</div>
 	<div class="col-2">
-		<h2><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
+		<h2 class="hide-xs"><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
 	</div>
 </div>
 {% include "calls.njk" %}
