@@ -2,7 +2,7 @@
 title: Abuse and sexual humilation of detainees
 date: 2023-11-01
 tags:
-  - 8(2)(a)(ii) War crime of torture.
+  - War crime of torture. 8(2)(a)(ii)
 sources:
   - https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel–Hamas_war
 ---

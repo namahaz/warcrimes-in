@@ -2,7 +2,7 @@
 title: Targetting of journalists and their families
 date: 2023-11-01
 tags:
-  - 8(2)(c)(i) War crime of murder.
+  - War crime of murder. 8(2)(c)(i)
 sources:
   - https://en.wikipedia.org/wiki/Violence_against_journalists_in_the_2023_Israel–Hamas_war
 ---

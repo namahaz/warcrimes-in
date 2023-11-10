@@ -1,10 +1,14 @@
 ---
-layout: layouts/home.njk
+layout: layouts/social.njk
 eleventyNavigation:
   key: 👪
   order: 2
 ---
-## "We want to judge the killers of children."
+# "We want to judge the killers of children."
+
+Since the start of the Israel-Hamas war on October 7th, Israeli Defence Forces have been directed to kill 10,203 Gazan civilians including 4,812 children with 2,551 Gazans considered missing under rubble. 53,700 units have been destroyed leaving over 1,600,000 Gazans displaced. These are widely considered war crimes and Al-Haq, Al Mezan and Palestinian Center for Human Rights along with Reporters Without Borders have filed two separate lawsuits with the International Criminal Court.
+
+With the goal of calling for a ceasefire, war crime trials and Palestinian nationhood, organizers are hanging up these posters around the world. You can also [add to the archive](https://github.com/warcrimesinpalestine/warcrimesinpalestine.github.io/issues).
 
 ### Why
 

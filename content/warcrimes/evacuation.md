@@ -2,8 +2,8 @@
 title: Forcible displacement of Gazans
 date: 2023-10-13
 tags:
-  - 8(2)(a)(vii) War crime of unlawful deportation and transfer.
-  - 8(2))(e)(viii)War crime of displacing civilians
+  - War crime of unlawful deportation and transfer. 8(2)(a)(vii)
+  - War crime of displacing civilians. 8(2))(e)(viii)
 sources:
   - https://en.wikipedia.org/wiki/Evacuation_of_the_northern_Gaza_Strip
 ---

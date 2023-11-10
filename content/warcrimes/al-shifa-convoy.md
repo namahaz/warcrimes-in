@@ -2,8 +2,8 @@
 title: Al-Shifa ambulance convoy bombed
 date: 2023-11-03
 tags:
-  - 8(2)(b)(iii) War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission.
-  - 8(2)(e)(i) War crime of attacking civilians.
+  - War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission. 8(2)(b)(iii)
+  - War crime of attacking civilians. 8(2)(e)(i)
 sources:
   - https://en.wikipedia.org/wiki/Al-Shifa_ambulance_airstrike
 ---

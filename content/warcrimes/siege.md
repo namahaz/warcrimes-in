@@ -2,8 +2,8 @@
 title: Siege of the Gaza Strip
 date: 2023-10-09
 tags:
-  - 6(c) Deliberately inflicting on a group conditions of life calculated to bring about its physical destruction in whole or in part.
-  - 8(2)(b)(xxv) War crime of starvation as a method of warfare.
+  - Deliberately inflicting on a group conditions of life calculated to bring about its physical destruction in whole or in part. 6(c)
+  - War crime of starvation as a method of warfare. 8(2)(b)(xxv)
 sources:
   - https://en.wikipedia.org/wiki/2023_Israeli_blockade_of_the_Gaza_Strip
 ---
