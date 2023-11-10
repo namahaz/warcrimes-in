@@ -116,4 +116,7 @@ article {
 	h3 {
 		font-size: 2rem;
 	}
+	.is-full-screen {
+		min-height: auto;
+	}
 }
