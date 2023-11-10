@@ -43,7 +43,7 @@
 			<div class="nav-left">
 				<div class="tabs">
 					<a href="javascript:if(window.print)window.print()">🖨</a>
-					<a href="/WCIP.pdf">📄</a>
+					<a href="/WCIP-v1.pdf">📄</a>
 					{%- for entry in collections.all | eleventyNavigation %}
 						<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 					{%- endfor %}
