@@ -1,5 +1,20 @@
+h1 {
+	font-size: 14rem;
+}
+
+h2 {
+	font-size: 12rem;
+}
+
+h3 {
+	font-size: 5.4rem;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
 @page {
-	size: 8.5in;
+	size: 11in 17in;
 	margin: 0.325in;
-    background: var(--color-primary);
 }
