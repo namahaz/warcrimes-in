@@ -77,7 +77,7 @@ article {
 
 @page {
 	size: letter;
-	margin: 0.325in;
+	margin: 0.125in;
 }
 
 @media print {

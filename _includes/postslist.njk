@@ -20,7 +20,6 @@
 			<li><a href="{{ source }}">{{ source }}</a></li>
 		{%- endfor %}
 		</ul>
-		{% include "hashtag.njk" %}
 	</div>
 	<div class="col-2">
 		<h2><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
