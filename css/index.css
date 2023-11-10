@@ -103,3 +103,17 @@ article {
 	}
 
 }
+
+@media screen and (max-width: 599px) {
+	h1 {
+		font-size: 6rem;
+	}
+
+	h2 {
+		font-size: 3.2rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+}
