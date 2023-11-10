@@ -1,5 +1,5 @@
 ---
-title: Church Saint Poryphorus bombed
+title: Church Saint Porphyrius bombed
 date: 2023-10-19
 tags:
   - War crime of attacking protected objects. 8(2)(b)(ix)
