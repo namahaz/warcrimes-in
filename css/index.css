@@ -4,7 +4,9 @@
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
 	--font-color: #333333;
-	--color-primary: var(--color-error);
+	--color-primary: #099268;
+	--color-error: #e03131;
+	--color-success: #0b7285;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
