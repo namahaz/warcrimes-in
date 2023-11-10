@@ -15,7 +15,7 @@
 		{%- endfor %}
 		</h3><br/>
 		<h4>{{ post.content | safe }}</h4>
-		<ul>
+		<ul class="hide-xs">
 		{%- for source in post.data.sources | filterTagList %}
 			<li><a href="{{ source }}">{{ source }}</a></li>
 		{%- endfor %}
