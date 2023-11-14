@@ -2,7 +2,7 @@
 title: UNRWA school bombed
 date: 2023-10-17
 tags:
-  - 8(2)(b)(iii) War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission.
+  - War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission. 8(2)(b)(iii)
 sources:
   - https://en.wikipedia.org/wiki/October_2023_UNRWA_school_airstrike
 ---

@@ -2,8 +2,8 @@
 title: Jabalia refugee camp bombed
 date: 2023-10-09
 tags:
-  - 8(2)(b)(iii) War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission.
-  - 8(2)(e)(i) War crime of attacking civilians.
+  - War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission. 8(2)(b)(iii)
+  - War crime of attacking civilians. 8(2)(e)(i)
 sources:
   - https://en.wikipedia.org/wiki/31_October_2023_attack_on_Jabalia
   - https://en.wikipedia.org/wiki/Jabalia_refugee_camp_airstrikes

@@ -3,10 +3,20 @@
 	--bg-secondary-color: #f3f3f6;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
-	--font-color: #333333;
-	--color-primary: var(--color-error);
+	--font-color: #212529;
+	--color-primary: #099268;
+	--color-error: #e03131;
+	--color-success: #0b7285;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+body.dark {
+	--bg-color: #212529;
+	--bg-secondary-color: #343a40;
+	--font-color: #f1f3f5;
+	--color-grey: #ced4da;
+	--color-darkGrey: #868e96;
 }
 
 h1 {
@@ -28,7 +38,7 @@ h2 {
 
 h3 {
 	font-weight: 600;
-	font-size: 3.2rem;
+	font-size: 3.4rem;
 	margin: 0;
 	line-height: 1.25;
 	font-stretch: semi-condensed;
@@ -61,10 +71,10 @@ article {
 	position: relative;
 }
 
-nav {
+/* nav {
 	position: fixed;
 	top: 0;
-}
+} */
 
 aside {
 	position: absolute;
@@ -114,7 +124,7 @@ article {
 	}
 
 	h3 {
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
 	.is-full-screen {
 		min-height: auto;

@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base-dark.njk
 ---
 <article class="is-full-screen break-after">
 <h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
@@ -9,22 +9,13 @@ layout: layouts/base.njk
 	</div>
 </div>
 <div class="row">
-	<div class="col-10">
+	<div class="col">
 		<h3>Article violation(s):<br/>
 		{%- for tag in tags | filterTagList %}
 			{{ tag }}<br />
 		{%- endfor %}
 		</h3><br/>
-		<h4>{{ content | safe }}</h4>
-		<ul>
-		{%- for source in sources | filterTagList %}
-			<li><a href="{{ source }}">{{ source }}</a></li>
-		{%- endfor %}
-		</ul>
-		{% include "hashtag.njk" %}
 	</div>
-	<div class="col-2">
-		<h2><time datetime="{{ date | htmlDateString }}">{{ date | readableDate("LLL yyyy") }}</time></h3>
 	</div>
 </div>
 

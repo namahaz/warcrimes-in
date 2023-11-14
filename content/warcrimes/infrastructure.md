@@ -2,8 +2,8 @@
 title: Damage to food and water sources
 date: 2023-10-09
 tags:
-  - 7(1)(b) Crime against humanity of extermination.
-  - 8(2)(b)(v) War crime of attacking undefended places.
+  - Crime against humanity of extermination. 7(1)(b)
+  - War crime of attacking undefended places. 8(2)(b)(v)
 sources:
   - https://reliefweb.int/report/occupied-palestinian-territory/israel-waging-extensive-war-starvation-against-gazas-civilian-population-enar
 ---

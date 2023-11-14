@@ -9,23 +9,18 @@
 </div>
 <div class="row">
 	<div class="col-10">
-		<h4 class="text-error">International Criminal Court Article(s):</h4>
+		<h4>International Criminal Court Article(s):</h4>
 		<h3>
 		{%- for tag in post.data.tags | filterTagList %}
 			{{ tag }}<br />
 		{%- endfor %}
 		</h3><br/>
-		<h4>{{ post.content | safe }}</h4>
-		<ul class="hide-xs">
-		{%- for source in post.data.sources | filterTagList %}
-			<li><a href="{{ source }}">{{ source }}</a></li>
-		{%- endfor %}
-		</ul>
 	</div>
 	<div class="col-2">
-		<h2 class="hide-xs"><a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></a></h3>
+		<h4>—</h4>
+		<h3 class="hide-xs text-primary">Gaza<br /><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></h3>
 	</div>
 </div>
-{% include "calls.njk" %}
+{% include "calls-dark.njk" %}
 </article>
 {% endfor %}

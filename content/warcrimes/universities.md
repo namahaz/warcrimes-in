@@ -2,7 +2,7 @@
 title: Islamic University of Gaza bombed 
 date: 2023-10-12
 tags:
-  - 8(2)(b)(ix) War crime of attacking protected objects.
+  - War crime of attacking protected objects. 8(2)(b)(ix)
 sources:
   - https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel-Hamas_war
 ---

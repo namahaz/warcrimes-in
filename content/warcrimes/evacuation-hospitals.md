@@ -2,7 +2,7 @@
 title: Forcible evacuation of hospitals
 date: 2023-10-14
 tags:
-  - 8(2)(a)(vii) War crime of unlawful deportation and transfer.
+  - War crime of unlawful deportation and transfer. 8(2)(a)(vii)
 sources:
   - https://en.wikipedia.org/wiki/Evacuation_of_the_northern_Gaza_Strip
 ---
