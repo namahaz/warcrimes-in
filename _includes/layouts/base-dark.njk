@@ -40,20 +40,8 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
-	<body class="bg-error">
-		{# {% include "header.njk" %} #}
-		<nav class="hide-pr hide-xs nav">
-			<div class="nav-left">
-				<div class="tabs">
-					<a href="javascript:if(window.print)window.print()">🖨</a>
-					<a href="/WCIP-v1.pdf">📄</a>
-					{%- for entry in collections.all | eleventyNavigation %}
-						<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-					{%- endfor %}
-				</div>
-			</div>
-		</nav>
-
+	<body class="bg-primary">
+		{% include "nav.njk" %}
 		<main id="skip" class="container">
 			{{ content | safe }}
 		</main>

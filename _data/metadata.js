@@ -1,11 +1,11 @@
 module.exports = {
 	title: "War Crimes in Palestine",
-	url: "https://warcrimesinpalestine.github.io/",
+	url: "https://warcrimes.in/palestine/",
+	repo: "/palestine/",
 	language: "en",
 	description: "Documenting War Crimes as Posters",
 	author: {
-		name: "WCIP",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "War Crimes In",
+		url: "https://warcrimes.in/palestine"
 	}
 }
