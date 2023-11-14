@@ -28,6 +28,14 @@
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
+body.dark {
+	--bg-color: #212529;
+	--bg-secondary-color: #343a40;
+	--font-color: #f1f3f5;
+	--color-grey: #ced4da;
+	--color-darkGrey: #868e96;
+}
+
 h1 {
 	font-size: 15.2rem;
 	margin: 0;
@@ -80,10 +88,10 @@ article {
 	position: relative;
 }
 
-nav {
+/* nav {
 	position: fixed;
 	top: 0;
-}
+} */
 
 aside {
 	position: absolute;
@@ -140,15 +148,15 @@ article {
 	}
 }
 h1 {
-	font-size: 14rem;
+	font-size: 13.2rem;
 }
 
 h2 {
-	font-size: 12rem;
+	font-size: 10rem;
 }
 
 h3 {
-	font-size: 5.4rem;
+	font-size: 3.6rem;
 }
 
 h4 {
@@ -156,22 +164,24 @@ h4 {
 }
 
 @page {
-	size: 11in 17in;
+	size: 11in;
 	margin: 0.325in;
 }</style>
 	</head>
-	<body class="bg-error">
-		
-		<nav class="hide-pr hide-xs nav">
-			<div class="nav-left">
-				<div class="tabs">
-					<a href="javascript:if(window.print)window.print()">🖨</a>
-					<a href="/WCIP-v1.pdf">📄</a>
-						<a href="/">🕊</a>
-						<a href="/about/" aria-current="page">👪</a>
-				</div>
-			</div>
-		</nav>
+	<body class="bg-primary">
+		<nav class="hide-pr hide-xs nav container">
+    <div class="nav-left">
+        <div class="tabs">
+            
+                <a href="/">🕊</a>
+                <a href="/about/" aria-current="page">👪</a>
+        </div>
+    </div>
+    <div class="nav-right">
+        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
+        <a href="/palestine/WCIP-v1.pdf" class="button error">📄 Posters</a>
+    </div>
+</nav>
 
 		<main id="skip" class="container">
 			<h1 id="we-want-to-judge-the-killers-of-children" tabindex="-1">&quot;We want to judge the killers of children.&quot;</h1>

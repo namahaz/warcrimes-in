@@ -11,6 +11,14 @@
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
+body.dark {
+	--bg-color: #212529;
+	--bg-secondary-color: #343a40;
+	--font-color: #f1f3f5;
+	--color-grey: #ced4da;
+	--color-darkGrey: #868e96;
+}
+
 h1 {
 	font-size: 15.2rem;
 	margin: 0;
@@ -63,10 +71,10 @@ article {
 	position: relative;
 }
 
-nav {
+/* nav {
 	position: fixed;
 	top: 0;
-}
+} */
 
 aside {
 	position: absolute;

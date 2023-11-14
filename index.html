@@ -28,6 +28,14 @@
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
+body.dark {
+	--bg-color: #212529;
+	--bg-secondary-color: #343a40;
+	--font-color: #f1f3f5;
+	--color-grey: #ced4da;
+	--color-darkGrey: #868e96;
+}
+
 h1 {
 	font-size: 15.2rem;
 	margin: 0;
@@ -80,10 +88,10 @@ article {
 	position: relative;
 }
 
-nav {
+/* nav {
 	position: fixed;
 	top: 0;
-}
+} */
 
 aside {
 	position: absolute;
@@ -139,32 +147,43 @@ article {
 		min-height: auto;
 	}
 }</style>
+
+		<script>
+			if (window.matchMedia &&
+				window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			document.body.classList.add('dark');
+			}
+		</script>
 	</head>
 	<body>
-		
-		<nav class="hide-pr hide-xs nav">
-			<div class="nav-left">
-				<div class="tabs">
-					<a href="javascript:if(window.print)window.print()">🖨</a>
-					<a href="/WCIP-v1.pdf">📄</a>
-						<a href="/" aria-current="page">🕊</a>
-						<a href="/about/">👪</a>
-				</div>
-			</div>
-		</nav>
+		<nav class="hide-pr hide-xs nav container">
+    <div class="nav-left">
+        <div class="tabs">
+            
+                <a href="/" aria-current="page">🕊</a>
+                <a href="/about/">👪</a>
+        </div>
+    </div>
+    <div class="nav-right">
+        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
+        <a href="/palestine/WCIP-v1.pdf" class="button error">📄 Posters</a>
+    </div>
+</nav>
+
 
 		<main id="skip" class="container">
 			<article class="is-full-screen hide-pr break-after">
     <h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
     <div class="row">
         <div class="col">
-            <h2 class="text-capitalize">#WarCrimesInPalestine Posters</h2>
-            <h3>Since the start of Israel-Hamas, Israel 🇮🇱 has engaged in and been charged with war crimes against Palestinian 🇵🇸 civilians.</h3><br/>
-            <h4><a href="https://www.alhaq.org/advocacy/22138.html">Al-Haq, Al Mezan and Palestinian Center for Human Rights</a> along with <a href="https://rsf.org/en/rsf-files-complaint-icc-war-crimes-against-journalists-palestine-and-israel">Reporters Without Borders</a> have filed lawsuits or complaints with the International Criminal Court. The National Lawyers Guild, Palestine Legal and the Center for Constitutional Rights have put members of Congress <a href="https://ccrjustice.org/legal-organizations-put-members-congress-notice-complicity-genocide">on notice for complicity in genocide and war crimes</a>.</h2>
+            <h2 class="text-capitalize">#WarCrimesInPalestine</h2>
             <br />
             <h3>Print posters, call Congress and add to the <a href="https://github.com/warcrimesinpalestine/warcrimesinpalestine.github.io/issues">war crimes archive</a>.</h3><br>
             <a class="button error" href="/WCIP-v1.pdf"><h3>📄 Posters</h3></a><a class="button success" href="https://5calls.org/issue/israel-palestine-gaza-war-hamas-ceasefire/"><h3>🕊 Ceasefire</h3></a>
             <br /><br />
+            <h3>The world has witnessed Israel 🇮🇱 engage in war crimes against Palestinian 🇵🇸 civilians.</h3><br/>
+            <h4><a href="https://www.alhaq.org/advocacy/22138.html">Al-Haq, Al Mezan and Palestinian Center for Human Rights</a> along with <a href="https://rsf.org/en/rsf-files-complaint-icc-war-crimes-against-journalists-palestine-and-israel">Reporters Without Borders</a> have filed lawsuits or complaints with the International Criminal Court. The National Lawyers Guild, Palestine Legal and the Center for Constitutional Rights have put members of Congress <a href="https://ccrjustice.org/legal-organizations-put-members-congress-notice-complicity-genocide">on notice for complicity in genocide and war crimes</a>.</h2>
+            <br />
             <h3>🕊 Call for Ceasefire.<br/>
             💣 Call for Arms Controls.<br/>
             ⚖️ Call for War Crime Trials.<br/>
@@ -211,7 +230,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -251,7 +270,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -291,7 +310,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -332,7 +351,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -372,7 +391,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -412,7 +431,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -452,7 +471,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -493,7 +512,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -533,7 +552,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -574,7 +593,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -616,7 +635,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -657,7 +676,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
@@ -699,7 +718,7 @@ article {
     <h4>10,203 Gaza Civilians Killed. 4,812 Children Killed. 2,551 Gazans Missing. 53,700 Units Destroyed. 1,600,000 Displaced.</h2>		
 </div>
 <br />
-		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimesinpalestine.github.io" class="pull-right" />
+		<img src="https://chart.googleapis.com/chart?cht=qr&chs=105x105&chl=http%3A//warcrimes.in/palestine" class="pull-right" />
 		<h3>Call for Ceasefire.<br/>
         Call for Arms Controls.<br/>
 		Call for War Crime Trials.<br/>
