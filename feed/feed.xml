@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>War Crimes in Palestine</title>
+	<title>War Crimes In</title>
 	<subtitle>Documenting War Crimes as Posters</subtitle>
 	<link href="https://warcrimes.in/feed/feed.xml" rel="self"/>
-	<link href="https://warcrimes.in/palestine/"/>
-	<updated>2023-11-15T03:19:42Z</updated>
-	<id>https://warcrimes.in/palestine/</id>
+	<link href="https://warcrimes.in/"/>
+	<updated>2023-11-15T03:34:31Z</updated>
+	<id>https://warcrimes.in/</id>
 	<author>
 		<name>War Crimes In</name>
 		<email></email>

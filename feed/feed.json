@@ -1,13 +1,13 @@
 {
 	"version": "https://jsonfeed.org/version/1.1",
-	"title": "War Crimes in Palestine",
+	"title": "War Crimes In",
 	"language": "en",
-	"home_page_url": "https://warcrimes.in/palestine/",
+	"home_page_url": "https://warcrimes.in/",
 	"feed_url": "https://warcrimes.in/feed/feed.json",
 	"description": "Documenting War Crimes as Posters",
 	"author": {
 		"name": "War Crimes In",
-		"url": "https://warcrimes.in/palestine"
+		"url": "https://warcrimes.in/"
 	},
 	"items": [
 	]
