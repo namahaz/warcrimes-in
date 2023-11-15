@@ -1,0 +1,14 @@
+{# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
+<div class="row">
+	<div class="col">
+            <h3>War Crimes</h3>
+        <ol>
+            {% for post in postslist | reverse %}
+            <h4 class="text-capitalize">
+                <li>
+                    {{ post.data.title }}, <a href="{{ post.url }}"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time></a>
+                </li>
+            </h4>
+            {% endfor %}
+	</div>
+</div>

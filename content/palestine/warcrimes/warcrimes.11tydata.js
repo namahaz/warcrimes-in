@@ -1,6 +1,6 @@
 module.exports = {
 	tags: [
-		"posts"
+		"palestine"
 	],
 	"layout": "layouts/post.njk",
 };

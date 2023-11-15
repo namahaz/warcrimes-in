@@ -1,0 +1,51 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: 🇵🇸
+  order: 2
+numberOfLatestPostsToShow: 100
+---
+
+{% set postsCount = collections.palestine | length %}
+{# {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %} #}
+{# <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
+
+{% set postslist = collections.palestine | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+
+<article class="is-full-screen hide-pr break-after">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-capitalize">#WarCrimesInPalestine</h2>
+            <br />
+            <h3>Print posters, call Congress and add to the <a href="https://github.com/warcrimesin/warcrimesin.github.io/issues">war crimes archive</a>.</h3><br>
+            <a class="button error" href="/WCIP-v1.pdf"><h3>📄 Posters</h3></a><a class="button success" href="https://5calls.org/issue/israel-palestine-gaza-war-hamas-ceasefire/"><h3>🕊 Ceasefire</h3></a>
+            <br /><br />
+            <h3>The world has witnessed Israel 🇮🇱 engage in war crimes against Palestinian 🇵🇸 civilians.</h3><br/>
+            <h4><a href="https://www.alhaq.org/advocacy/22138.html">Al-Haq, Al Mezan and Palestinian Center for Human Rights</a> along with <a href="https://rsf.org/en/rsf-files-complaint-icc-war-crimes-against-journalists-palestine-and-israel">Reporters Without Borders</a> have filed lawsuits or complaints with the International Criminal Court. The National Lawyers Guild, Palestine Legal and the Center for Constitutional Rights have put members of Congress <a href="https://ccrjustice.org/legal-organizations-put-members-congress-notice-complicity-genocide">on notice for complicity in genocide and war crimes</a>.</h2>
+            <br />
+            <h3>🕊 Call for Ceasefire.<br/>
+            💣 Call for Arms Controls.<br/>
+            ⚖️ Call for War Crime Trials.</h3><br/>
+			{% include "contents.njk" %}
+        </div>
+    </div>
+</article>
+
+{% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+{% endif %}
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Damage_in_Gaza_Strip_during_the_October_2023_-_29.jpg" class="hide-pr hide-xs hide-sm hide-md hide-lg" />
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}

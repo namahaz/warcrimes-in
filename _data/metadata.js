@@ -1,7 +1,6 @@
 module.exports = {
 	title: "War Crimes in Palestine",
 	url: "https://warcrimes.in/palestine/",
-	repo: "/palestine/",
 	language: "en",
 	description: "Documenting War Crimes as Posters",
 	author: {

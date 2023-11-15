@@ -9,6 +9,6 @@
     </div>
     <div class="nav-right">
         <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
-        <a href="{{ metadata.repo }}WCIP-v1.pdf" class="button error">📄 Posters</a>
+        {% if page.url == "/palestine/" %}<a href="/WCIP-v1.pdf" class="button error">📄 Posters</a>{% endif %}
     </div>
 </nav>
