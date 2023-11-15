@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 eleventyNavigation:
   key: 👪
-  order: 2
+  order: 100
 ---
 # "We want to judge the killers of children."
 

@@ -1,10 +1,10 @@
 module.exports = {
-	title: "War Crimes in Palestine",
-	url: "https://warcrimes.in/palestine/",
+	title: "War Crimes In",
+	url: "https://warcrimes.in/",
 	language: "en",
 	description: "Documenting War Crimes as Posters",
 	author: {
 		name: "War Crimes In",
-		url: "https://warcrimes.in/palestine"
+		url: "https://warcrimes.in/"
 	}
 }
