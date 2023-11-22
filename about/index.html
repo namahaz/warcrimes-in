@@ -17,32 +17,36 @@
 		<style>* { box-sizing: border-box; }
 :root {
 	--bg-color: #ffffff;
-	--bg-secondary-color: #f3f3f6;
+	--bg-secondary-color: #fcc419;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
 	--font-color: #212529;
-	--color-primary: #099268;
+	--color-primary: #e8590c;
 	--color-error: #e03131;
-	--color-success: #0b7285;
+	--color-success: #3b5bdb;
+	--color-darkGrey: #141619;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
-body.dark {
-	--bg-color: #212529;
-	--bg-secondary-color: #343a40;
+.bg-secondary {
+	background-color: var(--bg-secondary-color);
+}
+
+.dark-mode {
+	--bg-color: #141619;
+	--bg-secondary-color: #141619;
 	--font-color: #f1f3f5;
 	--color-grey: #ced4da;
-	--color-darkGrey: #868e96;
 }
 
 h1 {
-	font-size: 15.2rem;
+	font-size: 12rem;
 	margin: 0;
 	line-height: 1.25;
-	font-stretch: expanded;
+	font-stretch: semi-expanded;
 	font-weight: 900;
-	letter-spacing: -0.08em;
+	letter-spacing: -0.04em;
 }
 
 h2 {
@@ -114,7 +118,7 @@ article {
 	}
 
 	h1 {
-		font-size: 10rem;
+		font-size: 8.6rem;
 	}
 
 	h2 {
@@ -156,24 +160,28 @@ article {
 		</script>
 	</head>
 	<body>
-		<nav class="hide-pr hide-xs nav container">
-    <div class="nav-left">
-        <div class="tabs">
-            
-                <a href="/">🕊</a>
-                <a href="/palestine/">🇵🇸</a>
-                <a href="/about/" aria-current="page">👪</a>
+		<nav class="hide-pr hide-xs nav bg-secondary">
+    <div class="container">
+        <div class="nav-left">
+            <div class="tabs">
+                
+                    <a href="/">🕊</a>
+                    <a href="/palestine/">🇵🇸</a>
+                    <a href="/about/" aria-current="page">👪</a>
+            </div>
         </div>
-    </div>
-    <div class="nav-right">
-        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
-        
+        <div class="nav-right">
+            <a href="javascript:document.body.classList.toggle('dark-mode')">🌚</a>
+            
+        </div>
     </div>
 </nav>
 
 
-		<main id="skip" class="container">
-			<h1 id="we-want-to-judge-the-killers-of-children" tabindex="-1">&quot;We want to judge the killers of children.&quot;</h1>
+		<main id="skip">
+			<article class="is-full-screen hide-pr break-after bg-secondary">
+    <div class="container">
+        <h1 id="we-want-to-judge-the-killers-of-children" tabindex="-1">&quot;We want to judge the killers of children.&quot;</h1>
 <h4 id="on-november-8th-20-gazan-children-held-a-press-conference-outside-the-al-shifa-hospital-in-gaza-city-asking-the-world-to-protect-them-this-independent-project-answers-their-pleas-to-uphold-international-war-crime-laws-and-hold-accountable-killers-of-children" tabindex="-1">On November 8th, 20 Gazan children held a press conference outside the Al-Shifa Hospital in Gaza City asking the world to protect them. This independent project answers their pleas to uphold international war crime laws and hold accountable killers of children.</h4>
 <p>—</p>
 <h3 id="where" tabindex="-1">Where</h3>
@@ -183,6 +191,8 @@ article {
 <h4 id="to-make-contributions-open-an-issue-on-our-github-repository-we-recommend-using-an-anonymous-github-account-to-avoid-doxxing-we-also-use-github-to-avoid-ddos-attacks" tabindex="-1">To make contributions open an issue on our <a href="https://github.com/warcrimesin/warcrimesin.github.io/issues">GitHub repository</a>. We recommend using an anonymous GitHub account to avoid doxxing. We also use GitHub to avoid DDoS attacks.</h4>
 <p>—</p>
 
+    </div>
+</article>
 		</main>
 
 		<!-- Current page: /about/ -->

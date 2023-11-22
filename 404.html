@@ -17,32 +17,36 @@
 		<style>* { box-sizing: border-box; }
 :root {
 	--bg-color: #ffffff;
-	--bg-secondary-color: #f3f3f6;
+	--bg-secondary-color: #fcc419;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
 	--font-color: #212529;
-	--color-primary: #099268;
+	--color-primary: #e8590c;
 	--color-error: #e03131;
-	--color-success: #0b7285;
+	--color-success: #3b5bdb;
+	--color-darkGrey: #141619;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
-body.dark {
-	--bg-color: #212529;
-	--bg-secondary-color: #343a40;
+.bg-secondary {
+	background-color: var(--bg-secondary-color);
+}
+
+.dark-mode {
+	--bg-color: #141619;
+	--bg-secondary-color: #141619;
 	--font-color: #f1f3f5;
 	--color-grey: #ced4da;
-	--color-darkGrey: #868e96;
 }
 
 h1 {
-	font-size: 15.2rem;
+	font-size: 12rem;
 	margin: 0;
 	line-height: 1.25;
-	font-stretch: expanded;
+	font-stretch: semi-expanded;
 	font-weight: 900;
-	letter-spacing: -0.08em;
+	letter-spacing: -0.04em;
 }
 
 h2 {
@@ -114,7 +118,7 @@ article {
 	}
 
 	h1 {
-		font-size: 10rem;
+		font-size: 8.6rem;
 	}
 
 	h2 {
@@ -156,23 +160,25 @@ article {
 		</script>
 	</head>
 	<body>
-		<nav class="hide-pr hide-xs nav container">
-    <div class="nav-left">
-        <div class="tabs">
-            
-                <a href="/">🕊</a>
-                <a href="/palestine/">🇵🇸</a>
-                <a href="/about/">👪</a>
+		<nav class="hide-pr hide-xs nav bg-secondary">
+    <div class="container">
+        <div class="nav-left">
+            <div class="tabs">
+                
+                    <a href="/">🕊</a>
+                    <a href="/palestine/">🇵🇸</a>
+                    <a href="/about/">👪</a>
+            </div>
         </div>
-    </div>
-    <div class="nav-right">
-        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
-        
+        <div class="nav-right">
+            <a href="javascript:document.body.classList.toggle('dark-mode')">🌚</a>
+            
+        </div>
     </div>
 </nav>
 
 
-		<main id="skip" class="container">
+		<main id="skip">
 			<h1 id="content-not-found" tabindex="-1">Content not found.</h1>
 <h2 id="go-home" tabindex="-1">Go <a href="/">home</a>.</h2>
 <!--

@@ -17,32 +17,36 @@
 		<style>* { box-sizing: border-box; }
 :root {
 	--bg-color: #ffffff;
-	--bg-secondary-color: #f3f3f6;
+	--bg-secondary-color: #fcc419;
 	--grid-maxWidth: 108rem;
 	--grid-gutter: 2rem;
 	--font-color: #212529;
-	--color-primary: #099268;
+	--color-primary: #e8590c;
 	--color-error: #e03131;
-	--color-success: #0b7285;
+	--color-success: #3b5bdb;
+	--color-darkGrey: #141619;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
-body.dark {
-	--bg-color: #212529;
-	--bg-secondary-color: #343a40;
+.bg-secondary {
+	background-color: var(--bg-secondary-color);
+}
+
+.dark-mode {
+	--bg-color: #141619;
+	--bg-secondary-color: #141619;
 	--font-color: #f1f3f5;
 	--color-grey: #ced4da;
-	--color-darkGrey: #868e96;
 }
 
 h1 {
-	font-size: 15.2rem;
+	font-size: 12rem;
 	margin: 0;
 	line-height: 1.25;
-	font-stretch: expanded;
+	font-stretch: semi-expanded;
 	font-weight: 900;
-	letter-spacing: -0.08em;
+	letter-spacing: -0.04em;
 }
 
 h2 {
@@ -114,7 +118,7 @@ article {
 	}
 
 	h1 {
-		font-size: 10rem;
+		font-size: 8.6rem;
 	}
 
 	h2 {
@@ -156,51 +160,55 @@ article {
 		</script>
 	</head>
 	<body>
-		<nav class="hide-pr hide-xs nav container">
-    <div class="nav-left">
-        <div class="tabs">
-            
-                <a href="/">🕊</a>
-                <a href="/palestine/">🇵🇸</a>
-                <a href="/about/">👪</a>
+		<nav class="hide-pr hide-xs nav bg-secondary">
+    <div class="container">
+        <div class="nav-left">
+            <div class="tabs">
+                
+                    <a href="/">🕊</a>
+                    <a href="/palestine/">🇵🇸</a>
+                    <a href="/about/">👪</a>
+            </div>
         </div>
-    </div>
-    <div class="nav-right">
-        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
-        
+        <div class="nav-right">
+            <a href="javascript:document.body.classList.toggle('dark-mode')">🌚</a>
+            
+        </div>
     </div>
 </nav>
 
 
-		<main id="skip" class="container">
+		<main id="skip">
 			
 
 
-<article class="is-full-screen break-after">
-<h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
-<div class="row">
-	<div class="col">
-		<h2 class="text-capitalize">Church Saint Porphyrius bombed</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="col-10">
-		<h4 class="text-error">International Criminal Court Article(s):</h4>
-		<h3>
-			War crime of attacking protected objects. 8(2)(b)(ix)<br />
-			War crime of attacking civilians. 8(2)(e)(i)<br />
-		</h3><br/>
-		<h4><p>Israel Defence Forces conducted an airstrike that hit part of the Church of Saint Porphyrius where 500 Muslims and Christians had been sheltering from bombardments. At least 18 Palestinians were killed in the airstrike with exterior damage to the third oldest church in the world. The Greek Orthodox Patriarchate of Jerusalem condemned it as a &quot;a war crime that cannot be ignored.&quot;</p>
+<article class="break-after bg-secondary">
+	<div class="container">
+		<h1 class="text-primary hide-xs hide-sm hide-md hide-lg text-uppercase">warcrimes.in</h1>
+		<div class="row">
+			<div class="col">
+				<h2 class="text-capitalize">Church Saint Porphyrius bombed</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-10">
+				<h4 class="text-error">International Criminal Court Article(s):</h4>
+				<h3>
+					War crime of attacking protected objects. 8(2)(b)(ix)<br />
+					War crime of attacking civilians. 8(2)(e)(i)<br />
+				</h3><br/>
+				<h4><p>Israel Defence Forces conducted an airstrike that hit part of the Church of Saint Porphyrius where 500 Muslims and Christians had been sheltering from bombardments. At least 18 Palestinians were killed in the airstrike with exterior damage to the third oldest church in the world. The Greek Orthodox Patriarchate of Jerusalem condemned it as a &quot;a war crime that cannot be ignored.&quot;</p>
 </h4>
-		<ul class="hide-xs">
-			<li><a href="https://en.wikipedia.org/wiki/Church_of_Saint_Porphyrius_airstrike">https://en.wikipedia.org/wiki/Church_of_Saint_Porphyrius_airstrike</a></li>
-		</ul>
-	</div>
-	<div class="col-2">
-		<h2 class="hide-xs"><a href="/palestine/warcrimes/church-saint-porphyrius/"><time datetime="2023-10-19">Oct 2023</time></a></h3>
-	</div>
-</div>
-<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
+				<ul class="hide-xs hide-pr">
+					<li><a href="https://en.wikipedia.org/wiki/Church_of_Saint_Porphyrius_airstrike">https://en.wikipedia.org/wiki/Church_of_Saint_Porphyrius_airstrike</a></li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<h4 class="text-capitalize text-error">palestine</h4> 
+				<h2 class="hide-xs"><a href="/palestine/warcrimes/church-saint-porphyrius/"><time datetime="2023-10-19">Oct 19, 2023</time></a></h3>
+			</div>
+		</div>
+		<aside class="hide-xs hide-sm hide-md hide-lg container">
 	<div class="row">
 		<div class="col">
 		<div class="hide-xs hide-sm hide-md hide-lg">
@@ -215,32 +223,35 @@ article {
 		</div>
 	</div>
 </aside>
+	</div>
 </article>
 
-<article class="is-full-screen break-after">
-<h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
-<div class="row">
-	<div class="col">
-		<h2 class="text-capitalize">Islamic University of Gaza bombed</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="col-10">
-		<h4 class="text-error">International Criminal Court Article(s):</h4>
-		<h3>
-			War crime of attacking protected objects. 8(2)(b)(ix)<br />
-		</h3><br/>
-		<h4><p>The Islamic University of Gaza issued a statement on 10 October saying: “Large parts of the buildings of the Islamic University of Gaza were subjected to major damage and severe material losses” as a result of Israeli airstrikes on Gaza City on 9 October. “The building of the College of Information Technology, the building of the Deanship of Community Service and Continuing Education, and the building of the university’s College of Science were all exposed to damage,” read the statement. The toll of deaths of Palestinian students and academics is rising.</p>
+<article class="break-after bg-secondary">
+	<div class="container">
+		<h1 class="text-primary hide-xs hide-sm hide-md hide-lg text-uppercase">warcrimes.in</h1>
+		<div class="row">
+			<div class="col">
+				<h2 class="text-capitalize">Islamic University of Gaza bombed</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-10">
+				<h4 class="text-error">International Criminal Court Article(s):</h4>
+				<h3>
+					War crime of attacking protected objects. 8(2)(b)(ix)<br />
+				</h3><br/>
+				<h4><p>The Islamic University of Gaza issued a statement on 10 October saying: “Large parts of the buildings of the Islamic University of Gaza were subjected to major damage and severe material losses” as a result of Israeli airstrikes on Gaza City on 9 October. “The building of the College of Information Technology, the building of the Deanship of Community Service and Continuing Education, and the building of the university’s College of Science were all exposed to damage,” read the statement. The toll of deaths of Palestinian students and academics is rising.</p>
 </h4>
-		<ul class="hide-xs">
-			<li><a href="https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel-Hamas_war">https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel-Hamas_war</a></li>
-		</ul>
-	</div>
-	<div class="col-2">
-		<h2 class="hide-xs"><a href="/palestine/warcrimes/universities/"><time datetime="2023-10-12">Oct 2023</time></a></h3>
-	</div>
-</div>
-<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
+				<ul class="hide-xs hide-pr">
+					<li><a href="https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel-Hamas_war">https://en.wikipedia.org/wiki/War_crimes_in_the_2023_Israel-Hamas_war</a></li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<h4 class="text-capitalize text-error">palestine</h4> 
+				<h2 class="hide-xs"><a href="/palestine/warcrimes/universities/"><time datetime="2023-10-12">Oct 12, 2023</time></a></h3>
+			</div>
+		</div>
+		<aside class="hide-xs hide-sm hide-md hide-lg container">
 	<div class="row">
 		<div class="col">
 		<div class="hide-xs hide-sm hide-md hide-lg">
@@ -255,34 +266,37 @@ article {
 		</div>
 	</div>
 </aside>
+	</div>
 </article>
 
-<article class="is-full-screen break-after">
-<h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
-<div class="row">
-	<div class="col">
-		<h2 class="text-capitalize">Al-Shati refugee camp and mosques bombed</h2>
-	</div>
-</div>
-<div class="row">
-	<div class="col-10">
-		<h4 class="text-error">International Criminal Court Article(s):</h4>
-		<h3>
-			War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission. 8(2)(b)(iii)<br />
-			War crime of attacking protected objects. 8(2)(b)(ix)<br />
-			War crime of attacking civilians. 8(2)(e)(i)<br />
-		</h3><br/>
-		<h4><p>Since October 9th, 2023, Israel Defense Forces conducted 2 airstrikes on Al-Shati refugee camp, he third largest such camp with a population of 90,000 people. The camp was originally created to house refugees from the 1948 Arab-Israeli War. In the airstrikes, four mosques were flattened as seen in satellite pictures.</p>
+<article class="break-after bg-secondary">
+	<div class="container">
+		<h1 class="text-primary hide-xs hide-sm hide-md hide-lg text-uppercase">warcrimes.in</h1>
+		<div class="row">
+			<div class="col">
+				<h2 class="text-capitalize">Al-Shati refugee camp and mosques bombed</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-10">
+				<h4 class="text-error">International Criminal Court Article(s):</h4>
+				<h3>
+					War crime of attacking personnel or objects involved in a humanitarian assistance or peacekeeping mission. 8(2)(b)(iii)<br />
+					War crime of attacking protected objects. 8(2)(b)(ix)<br />
+					War crime of attacking civilians. 8(2)(e)(i)<br />
+				</h3><br/>
+				<h4><p>Since October 9th, 2023, Israel Defense Forces conducted 2 airstrikes on Al-Shati refugee camp, he third largest such camp with a population of 90,000 people. The camp was originally created to house refugees from the 1948 Arab-Israeli War. In the airstrikes, four mosques were flattened as seen in satellite pictures.</p>
 </h4>
-		<ul class="hide-xs">
-			<li><a href="https://en.wikipedia.org/wiki/Al-Shati_refugee_camp_airstrike">https://en.wikipedia.org/wiki/Al-Shati_refugee_camp_airstrike</a></li>
-		</ul>
-	</div>
-	<div class="col-2">
-		<h2 class="hide-xs"><a href="/palestine/warcrimes/al-shati-camp/"><time datetime="2023-10-09">Oct 2023</time></a></h3>
-	</div>
-</div>
-<aside class="hide-xs hide-sm hide-md hide-lg is-full-width">
+				<ul class="hide-xs hide-pr">
+					<li><a href="https://en.wikipedia.org/wiki/Al-Shati_refugee_camp_airstrike">https://en.wikipedia.org/wiki/Al-Shati_refugee_camp_airstrike</a></li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<h4 class="text-capitalize text-error">palestine</h4> 
+				<h2 class="hide-xs"><a href="/palestine/warcrimes/al-shati-camp/"><time datetime="2023-10-09">Oct 9, 2023</time></a></h3>
+			</div>
+		</div>
+		<aside class="hide-xs hide-sm hide-md hide-lg container">
 	<div class="row">
 		<div class="col">
 		<div class="hide-xs hide-sm hide-md hide-lg">
@@ -297,6 +311,7 @@ article {
 		</div>
 	</div>
 </aside>
+	</div>
 </article>
 
 
