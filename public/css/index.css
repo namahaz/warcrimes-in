@@ -10,6 +10,7 @@
 	--color-darkGrey: #141619;
 	--font-family-sans: "Anybody", sans-serif;
 	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+	--font-size: 2rem;
 }
 
 .bg-secondary {
@@ -50,7 +51,7 @@ h3 {
 
 h4 {
 	font-weight: 450;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	margin: 0;
 	line-height: 1.25;
 	font-stretch: semi-expanded;
