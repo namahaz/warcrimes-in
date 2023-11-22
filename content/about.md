@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/md.njk
 eleventyNavigation:
   key: 👪
   order: 100

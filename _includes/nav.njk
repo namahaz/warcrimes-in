@@ -1,14 +1,16 @@
-<nav class="hide-pr hide-xs nav container">
-    <div class="nav-left">
-        <div class="tabs">
-            {# <a href="javascript:if(window.print)window.print()">🖨</a> #}
-            {%- for entry in collections.all | eleventyNavigation %}
-                <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-            {%- endfor %}
+<nav class="hide-pr hide-xs nav bg-secondary">
+    <div class="container">
+        <div class="nav-left">
+            <div class="tabs">
+                {# <a href="javascript:if(window.print)window.print()">🖨</a> #}
+                {%- for entry in collections.all | eleventyNavigation %}
+                    <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+                {%- endfor %}
+            </div>
         </div>
-    </div>
-    <div class="nav-right">
-        <a href="javascript:document.body.classList.toggle('dark')">🌚</a>
-        {% if page.url == "/palestine/" %}<a href="/WCIP-v1.pdf" class="button error">📄 Posters</a>{% endif %}
+        <div class="nav-right">
+            <a href="javascript:document.body.classList.toggle('dark-mode')">🌚</a>
+            {% if page.url == "/palestine/" %}<a href="/WCIP-v1.pdf" class="button error">📄 Posters</a>{% endif %}
+        </div>
     </div>
 </nav>
