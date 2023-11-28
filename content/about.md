@@ -18,6 +18,6 @@ Postering is a form of non-violent protest. Sections of the site are formatted f
 
 ### How
 
-To make contributions open an issue on our [GitHub repository](https://github.com/warcrimesin/warcrimesin.github.io/issues). We recommend using an anonymous GitHub account to avoid doxxing. We also use GitHub to avoid DDoS attacks.
+To make contributions add a new issue on our [GitHub repository](https://github.com/warcrimesin/warcrimesin.github.io/issues). We recommend using an anonymous GitHub account to avoid doxxing. We also use GitHub to avoid DDoS attacks.
 
 —

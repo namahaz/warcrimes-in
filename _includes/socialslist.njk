@@ -1,26 +1,28 @@
 {# {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %} #}
 {% for post in postslist | reverse %}
 <article class="is-full-screen break-after">
-<h1 class="text-error hide-xs text-uppercase"> War Crime </h1>
-<div class="row">
-	<div class="col">
-		<h2 class="text-capitalize">{{ post.data.title }}</h2>
+	<div class="container">
+		<h1 class="text-primary text-uppercase">warcrimes.in</h1>
+		<div class="row">
+			<div class="col">
+				<h2 class="text-capitalize">{{ post.data.title }}</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-10">
+				<h4>International Criminal Court Article(s):</h4>
+				<h3>
+				{%- for tag in post.data.tags | filterTagList %}
+					{{ tag }}<br />
+				{%- endfor %}
+				</h3><br/>
+			</div>
+			<div class="col-2">
+				<h4 class="text-capitalize text-error">{{post.data.tags[0]}}</h4> 
+				<h3 class="hide-xs text-primary"><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("DD") }}</time></h3>
+			</div>
+		</div>
+		{% include "calls-dark.njk" %}
 	</div>
-</div>
-<div class="row">
-	<div class="col-10">
-		<h4>International Criminal Court Article(s):</h4>
-		<h3>
-		{%- for tag in post.data.tags | filterTagList %}
-			{{ tag }}<br />
-		{%- endfor %}
-		</h3><br/>
-	</div>
-	<div class="col-2">
-		<h4>—</h4>
-		<h3 class="hide-xs text-primary">Gaza<br /><time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate("LLL yyyy") }}</time></h3>
-	</div>
-</div>
-{% include "calls-dark.njk" %}
 </article>
 {% endfor %}
